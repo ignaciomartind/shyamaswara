@@ -1,0 +1,22 @@
+.writing{
+    padding: 3rem 5rem;
+    width: 85%;
+}
+.writing-content{
+    padding: 3rem;
+}
+.project{
+    display: flex;
+    padding: 2rem;
+}
+.project img{
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px gray;
+}
+.project-text{
+    padding: 0 2rem;
+}
+.project-text p{
+    margin-top: 1rem;
+    text-align: justify;
+}

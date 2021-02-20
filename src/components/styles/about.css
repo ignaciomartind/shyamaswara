@@ -1,0 +1,33 @@
+.about{
+    padding: 3rem 5rem;
+    width: 85%;
+}
+.about h2{
+    font-weight: 500;
+}
+.about >p{
+    margin-top: 1rem;
+}
+.about-content{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about-content img{
+    object-fit:contain;
+    margin-top: 2rem;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px rgb(110, 109, 109);
+}
+.about-content h3{
+    font-weight: 500;
+}
+.about-text{
+    padding: 0 2rem;
+}
+.about-text p{
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
