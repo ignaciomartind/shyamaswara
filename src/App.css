@@ -16,20 +16,29 @@ a,h1,h2,h3,h4,p{
 }
 .home, .about, .writing, .art, .contact, .sounds, .videos{
   animation: appearing;
-  animation-duration: 1000ms;
+  animation-duration: 700ms;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.85,.63,.58,1.17);
   height: 100vh;
-  overflow-y: scroll;
 } 
+
 @keyframes appearing{
   from{
     transform: translateY(100vh);
     /* background-color: rgb(42, 241, 241); */
     border-radius: 10px;
+    opacity: 0;
+  }
+  50%{
+    opacity: 0
   }
   to{
     transform: translateX(0);
     background-color: transparent;
+    opacity: 1;
   }
+}
+
+h2{
+  font-weight: 500;
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
-import {faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
-import {faInstagramSquare} from '@fortawesome/free-brands-svg-icons'
-import {faPinterestSquare} from '@fortawesome/free-brands-svg-icons'
-// import {faSoundcloud} from '@fortawesome/free-brands-svg-icons'
-import {faYoutubeSquare} from '@fortawesome/free-brands-svg-icons'
+import {faFacebook} from '@fortawesome/free-brands-svg-icons'
+import {faTwitter} from '@fortawesome/free-brands-svg-icons'
+// import {faInstagram} from '@fortawesome/free-brands-svg-icons'
+// import {faPinterest} from '@fortawesome/free-brands-svg-icons'
+import {faSoundcloud} from '@fortawesome/free-brands-svg-icons'
+import {faYoutube} from '@fortawesome/free-brands-svg-icons'
 
 
 import logo from '../media/logo.svg'
@@ -16,7 +16,7 @@ import './styles/menu.css'
 function Menu(props){
 
     const selectedLinkStyle = {
-        backgroundColor: 'rgb(81, 189, 240)',
+        backgroundColor: '#043038',
         color: 'white',
         boxShadow: '0px 0px 3px rgb(204, 202, 202)'
     }
@@ -27,21 +27,21 @@ function Menu(props){
             <ul>
                 {props.menuLinks.map(item =>{
                     if(item === props.selectedLink){
-                        return <a key={item} data-key={item} style={selectedLinkStyle} onClick={props.handleClick}>{item}</a>
+                        return <li key={item} data-key={item} onClick={props.handleClick} style={selectedLinkStyle}><a><span>{item}</span></a></li>
                     }else{
-                        return <a key={item} data-key={item} onClick={props.handleClick}>{item}</a>
+                        return <li key={item} data-key={item} onClick={props.handleClick}><a><span>{item}</span></a></li>
                     }
                 })}
             </ul>
         </nav>
         <div className="menu-media" >
                 <div className="media-container">
-                <FontAwesomeIcon icon={faFacebookSquare} href="https://facebook.com"/>
-                <FontAwesomeIcon icon={faTwitterSquare} />
-                <FontAwesomeIcon icon={faInstagramSquare} />
-                <FontAwesomeIcon icon={faPinterestSquare} />
-                {/* <FontAwesomeIcon icon={faSoundcloud} /> */}
-                <FontAwesomeIcon icon={faYoutubeSquare} /> 
+                <a href={'https://facebook.com/shyamaswara/'} target="_blank"><FontAwesomeIcon icon={faFacebook}/></a>
+                <a href={'https://twitter.com/shyamaswara'} target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
+                {/* <FontAwesomeIcon icon={faInstagram} /> */}
+                {/* <FontAwesomeIcon icon={faPinterest} /> */}
+                <a href={'https://soundcloud.com/shyamaswara'} target="_blank"><FontAwesomeIcon icon={faSoundcloud}/></a>
+                <a href={''} target="_blank"><FontAwesomeIcon icon={faYoutube}/></a>
                 </div>
                 <img src={logoEng} />
         </div>

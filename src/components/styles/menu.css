@@ -16,15 +16,17 @@
     flex-direction: column;
     justify-content: center;
 }
-.menu-nav ul a{
-    padding: .7rem 1rem;
+.menu-nav ul li{
     border-radius: 7px;
+    padding: .7rem 1rem;
     margin-top: .5rem;
     cursor: pointer;
+}
+.menu-nav ul a{
     font-weight: 500;
     transition: 200ms ease-out;
 }
-.menu-nav ul a:hover{
+.menu-nav ul li:hover{
     background-color: rgb(220, 255, 250); 
     color:rgb(29, 162, 185);
 }
@@ -37,7 +39,7 @@
 }
 .media-container > *{
     font-size: 2rem;
-    color: rgb(29, 162, 185);
+    color: rgb(4, 48, 56);
     cursor: pointer;
 }
 .menu-media{
@@ -49,5 +51,4 @@
 }
 .menu-media > img{
     width: 80%;
-    filter: grayscale(.7);
 }
