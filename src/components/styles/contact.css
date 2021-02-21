@@ -1,0 +1,88 @@
+.contact a,.contact a:visited{
+    color: white;
+}
+.contact{
+    padding: 3rem 5rem;
+    width: 85%;
+}
+.contact-content{
+    padding: 5rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.contact-mth1{
+    background-color: #043038;
+    border-radius: 7px;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px black;
+    width: 40%;
+}
+.contact-mth1 p{
+    color: WHITE;
+    font-size: 2rem;
+}
+.contact-mth1 ul{
+    margin-top: 4rem;
+}
+.contact-mth1 ul li{
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-mth1 ul li span{
+    padding: 1rem;
+}
+.contact-mth2{
+    width: 40%;
+    background-color: #ed5f5b;
+    border-radius: 7px;
+    padding: 2rem 1rem 1rem 1rem;
+    box-shadow: 0px 0px 5px black;
+    min-height: 50vh;
+}
+
+.contact-form{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.contact-form label{    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.contact-form input, .contact-form textarea{
+    padding: .5rem .5rem;
+    border: 2px solid rgb(212, 211, 211);
+    border-radius: 5px;
+    color: #043038;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+    border: 2px solid #043038;
+    outline: none;
+}
+.contact-btn{
+    align-self: center;
+    padding: .5rem 1rem;
+    box-shadow: 3px 3px 0px #074b57;
+    background-color: #043038;
+    color:white;
+    text-transform: uppercase;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+.contact-btn:active{
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}

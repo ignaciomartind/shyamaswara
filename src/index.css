@@ -5,6 +5,9 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+html{
+  font-size: 16px;
+}
 ::-webkit-scrollbar{
   display: none;
 }

@@ -9,8 +9,9 @@ body{
 }
 .App{
   display: flex;
+  height: 100vh;
 }
-a,h1,h2,h3,h4,p{
+a,h1,h2,h3,h4,p, label, button{
   font-family: 'Montserrat', sans-serif;
   text-shadow: none;
 }
@@ -20,17 +21,17 @@ a,h1,h2,h3,h4,p{
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.85,.63,.58,1.17);
   height: 100vh;
+  overflow: hidden;
 } 
-
+.art{
+  overflow: scroll;
+}
 @keyframes appearing{
   from{
     transform: translateY(100vh);
     /* background-color: rgb(42, 241, 241); */
     border-radius: 10px;
     opacity: 0;
-  }
-  50%{
-    opacity: 0
   }
   to{
     transform: translateX(0);
@@ -40,5 +41,11 @@ a,h1,h2,h3,h4,p{
 }
 
 h2{
+  font-size: 2rem;
   font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+select:focus, input:focus, button:focus{
+  outline: none;
 }

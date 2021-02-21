@@ -1,4 +1,46 @@
+.slick-arrow{
+    filter: invert(1);
+}
+
 .art{
     padding: 5rem 3rem;
-    width: 85%
+    width: 85%;
+}
+.art-content{
+    padding: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.art-item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgb(207, 206, 206);
+    transition: 300ms ease-out;
+    will-change: transform;
+    cursor: pointer;
+}
+.art-item img{
+    width: 100%;
+    height: 100%;
+}
+.art-item-info{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    bottom: -50px;
+    padding: 1rem;
+    transition: 300ms ease-out;
+    color: white;
+}
+.art-item:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 5px gray;
+}
+.art-item:hover .art-item-info{
+    bottom: 0;
+    opacity: 1;
 }

@@ -19,8 +19,8 @@ function Home(props){
         <header className="home-header">
             <h2>Home</h2>
             <div className="home-lang-select">
-                <select onChange={handleLanguage}>
-                    <option selected value="Kannada">Kannada</option>
+                <select defaultValue="Kannada" onChange={handleLanguage}>
+                    <option value="Kannada">Kannada</option>
                     <option value="English">English</option>
                 </select>
             </div>
