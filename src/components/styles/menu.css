@@ -55,3 +55,8 @@
 .menu-media > img{
     width: 80%;
 }
+@media (max-width: 1024px){
+    .menu{
+        left: 0
+    }
+}

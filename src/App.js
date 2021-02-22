@@ -7,6 +7,7 @@ import Writing from './components/Writing'
 import Art from './components/Art'
 import Prints from './components/Prints'
 import Sounds from './components/Sounds'
+import Store from './components/Store'
 import Contact from './components/Contact'
 
 import imgArt1 from './media/arts1.png'
@@ -21,40 +22,40 @@ import './App.css';
 
 function App() {
 
-  const menuLinks = ['Home', 'About', 'Writing', 'Art', 'Prints', 'Sounds', 'Contact']
+  const menuLinks = ['Home', 'About', 'Writing', 'Art', 'Prints', 'Sounds', 'Store', 'Contact']
   const art =[
     {
-      title: 'Title',
+      title: 'Title1',
       description: 'Description',
       image: imgArt1
     },
     {
-      title: 'Title',
+      title: 'Title2',
       description: 'Description',
       image: imgArt2
     },
     {
-      title: 'Title',
+      title: 'Title3',
       description: 'Description',
       image: imgArt3
     },
     {
-      title: 'Title',
+      title: 'Title4',
       description: 'Description',
       image: imgArt4
     },
     {
-      title: 'Title',
+      title: 'Title5',
       description: 'Description',
       image: imgArt5
     },
     {
-      title: 'Title',
+      title: 'Title6',
       description: 'Description',
       image: imgArt6
     },
     {
-      title: 'Title',
+      title: 'Title7',
       description: 'Description',
       image: imgArt7
     },
@@ -88,6 +89,9 @@ function App() {
 
       case 'Sounds': 
         return setSection(<Sounds />)
+      
+      case 'Store':
+        return setSection(<Store />)
 
       case 'Contact': 
         return setSection(<Contact />)

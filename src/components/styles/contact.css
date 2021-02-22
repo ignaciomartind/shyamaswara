@@ -60,6 +60,7 @@
     color: white;
     font-weight: 500;
     text-transform: uppercase;
+    margin-top: 1rem;
 }
 .contact-form input, .contact-form textarea{
     padding: .5rem .5rem;
@@ -73,6 +74,7 @@
 }
 .contact-btn{
     align-self: center;
+    margin-top: 1rem;
     padding: .5rem 1rem;
     box-shadow: 3px 3px 0px #074b57;
     background-color: #043038;
@@ -85,4 +87,16 @@
 .contact-btn:active{
     transform: translate(3px, 3px);
     box-shadow: none;
+}
+@media (max-width: 1024px){
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-mth1, .contact-mth2{
+        width: 100%;
+    }
+    .contact-mth2{
+        margin-top: 5rem;
+    }
 }

@@ -1,0 +1,69 @@
+.SV{
+    padding: 3rem 5rem;
+    width: 85%;
+}
+.SV-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.SV-videos{
+    padding: 5rem 3rem;
+    display: flex;
+    justify-content: center;
+}
+.SV-video-container{
+    position: relative;
+}
+.SV-video-container video{
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px black;
+    border: none;
+}
+.SV-video-info{
+    position: absolute;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    left: 80%;
+    right: -25%;
+    color: white;
+    top: 10%;
+}
+.SV-sounds{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 3rem;
+}
+.SV-audio-container{
+    border: 3px solid #043038;
+    border-radius: 7px;
+    padding: 1rem 3rem;
+    transition: 300ms ease-out;
+    font-weight: 500;
+  }
+  .SV-audio-container:hover{
+    background-color: #043038;
+  }
+  .SV-audio-container:hover p{
+    color: white;
+  }
+  .SV-audio-container:hover audio{
+    filter: invert(0);
+  }
+  .SV-audio-container audio{
+    margin-top: 1rem;
+    filter: invert(.8);
+    transition: 300ms ease-out
+  }
+  audio:focus{
+    outline: none;
+  }
+
+@media (max-width: 1024px){
+    .SV-sounds{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem
+    }
+}
