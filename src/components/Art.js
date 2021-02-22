@@ -23,7 +23,7 @@ function Art(props){
         <div className="art-content">
             {props.art.map(item => {
                 return <div className="art-item" key={item.title}>
-                    <img src={item.image} />
+                    <img src={item.image} alt="Art image"/>
                     <div className="art-item-info">
                         <p>{item.title}</p>
                         <p>{item.description}</p>

@@ -22,7 +22,7 @@ function Menu(props){
     }
 
     return <div className="menu">
-        <img src={logo} style={{ transform: "scale(.8)"}}/>
+        <img src={logo} style={{ transform: "scale(.8)"}} alt="Shyamaswara logo"/>
         <nav className="menu-nav">
             <ul>
                 {props.menuLinks.map(item =>{

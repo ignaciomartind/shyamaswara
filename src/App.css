@@ -13,7 +13,7 @@ body{
   min-height: 100%;
   overflow-x: hidden;
 }
-a,h1,h2,h3,h4,p, label, button{
+a,h1,h2,h3,h4,p, label, button, li{
   font-family: 'Montserrat', sans-serif;
   text-shadow: none;
 }

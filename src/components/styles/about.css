@@ -2,29 +2,40 @@
     padding: 3rem 5rem;
     width: 85%;
 }
-.about >p{
-    margin-top: 1rem;
-}
 .about-content{
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    margin-top: 4rem;
+    padding: 3rem 6rem;
+    background-image: url('../../media/flutemusic.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: scroll;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px gray;
 }
-.about-content img{
-    object-fit:contain;
-    margin-top: 2rem;
-    border-radius: 7px;
-    box-shadow: 0px 0px 5px rgb(110, 109, 109);
-}
-.about-content h3{
-    font-weight: 500;
+.about-content *{
+    color: white;
 }
 .about-text{
-    padding: 0 2rem;
+    margin-top: 5rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 7px;
 }
-.about-text p{
+.about-text ul{
     margin-top: 2rem;
-    font-weight: 300;
-    font-size: 1.2rem;
+    margin-left: 4rem;
+}
+.about-text ul li{
+    margin-top: .5rem;
+    list-style:square;
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px){
+    .about-content{
+        padding: 1rem;
+    }
+    .about-text{
+        margin-top:.5rem
+    }
 }
