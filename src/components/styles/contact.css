@@ -14,9 +14,9 @@
 .contact-mth1{
     background-color: #043038;
     border-radius: 7px;
-    padding: 2rem;
+    padding: 2rem 1rem;
     box-shadow: 0px 0px 5px black;
-    width: 40%;
+    width: 45%;
 }
 .contact-mth1 p{
     color: WHITE;
@@ -38,7 +38,7 @@
     padding: 1rem;
 }
 .contact-mth2{
-    width: 40%;
+    width: 45%;
     background-color: #ed5f5b;
     border-radius: 7px;
     padding: 2rem 1rem 1rem 1rem;

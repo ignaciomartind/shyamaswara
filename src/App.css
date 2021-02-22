@@ -2,30 +2,27 @@
 
 body{
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: rgb(243, 243, 243);
+  height: 100%;
+  overflow: scroll;
+  background-color: rgb(231, 230, 230);
   padding: 0 2vw;
 }
 .App{
   display: flex;
-  height: 100vh;
+  min-height: 100%;
 }
 a,h1,h2,h3,h4,p, label, button{
   font-family: 'Montserrat', sans-serif;
   text-shadow: none;
 }
 .home, .about, .writing, .art, .contact, .sounds, .videos{
+  margin-left: 18vw;
   animation: appearing;
   animation-duration: 700ms;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.85,.63,.58,1.17);
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
 } 
-.art{
-  overflow: scroll;
-}
 @keyframes appearing{
   from{
     transform: translateY(100vh);
