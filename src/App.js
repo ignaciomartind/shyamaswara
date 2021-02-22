@@ -94,6 +94,7 @@ function App() {
   const [section, setSection] = useState(<Home />)
 
   function handleClick(e){
+    e.preventDefault()
 
     const link = e.target.getAttribute('data-key')
 

@@ -27,21 +27,21 @@ function Menu(props){
             <ul>
                 {props.menuLinks.map(item =>{
                     if(item === props.selectedLink){
-                        return <li key={item} data-key={item} onClick={props.handleClick} style={selectedLinkStyle}><a><span>{item}</span></a></li>
+                        return <button  key={item} data-key={item} onClick={props.handleClick} style={selectedLinkStyle}>{item}</button>
                     }else{
-                        return <li key={item} data-key={item} onClick={props.handleClick}><a><span>{item}</span></a></li>
+                        return <button  key={item} data-key={item} onClick={props.handleClick}>{item}</button>
                     }
                 })}
             </ul>
         </nav>
         <div className="menu-media" >
                 <div className="media-container">
-                <a href={'https://facebook.com/shyamaswara/'} target="_blank"><FontAwesomeIcon icon={faFacebook}/></a>
-                <a href={'https://twitter.com/shyamaswara'} target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
+                <a href={'https://facebook.com/shyamaswara/'} target="_blank" ><FontAwesomeIcon icon={faFacebook} color="#1771e6"/></a>
+                <a href={'https://twitter.com/shyamaswara'} target="_blank"><FontAwesomeIcon icon={faTwitter} color="#1da1f2"/></a>
                 {/* <FontAwesomeIcon icon={faInstagram} /> */}
                 {/* <FontAwesomeIcon icon={faPinterest} /> */}
-                <a href={'https://soundcloud.com/shyamaswara'} target="_blank"><FontAwesomeIcon icon={faSoundcloud}/></a>
-                <a href={''} target="_blank"><FontAwesomeIcon icon={faYoutube}/></a>
+                <a href={'https://soundcloud.com/shyamaswara'} target="_blank"><FontAwesomeIcon icon={faSoundcloud} color="#ff7838"/></a>
+                <a href={''} target="_blank"><FontAwesomeIcon icon={faYoutube} color="#ff0000"/></a>
                 </div>
                 <img src={logoEng} />
         </div>

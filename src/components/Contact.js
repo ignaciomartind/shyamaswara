@@ -28,37 +28,37 @@ function Contact(props){
                 <form className="contact-form">
                     <label htmlFor="name">
                         Name
-                        <input type="text" id="name" name="name" placeholder="FirstName LastName">
+                        <input type="text" id="name" name="name" placeholder="FirstName LastName" required>
                             
                         </input>
                     </label>
                     <label htmlFor="phone">
                         Phone
-                        <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
 
                         </input>
                     </label>
                     <label htmlFor="email">
                         Email
-                        <input type="email" id="email" name="email" placeholder="Email address">
+                        <input type="email" id="email" name="email" placeholder="Email address" required>
 
                         </input>
                     </label>
                     <label htmlFor="budget">
                         Budget
-                        <input type="number" id="budget" name="budget" placeholder="Budget">
+                        <input type="number" id="budget" name="budget" placeholder="Budget" required>
 
                         </input>
                     </label>
                     <label htmlFor="subject">
                         Subject
-                        <input type="text" id="subject" name="subject" placeholder="Enter a subject">
+                        <input type="text" id="subject" name="subject" placeholder="Enter a subject" required>
 
                         </input>
                     </label>
                     <label htmlFor="summary">
                         Summary
-                        <textarea id="summary" name="summary">
+                        <textarea id="summary" name="summary" required>
 
                         </textarea>
                     </label>

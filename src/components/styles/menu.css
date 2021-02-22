@@ -17,20 +17,20 @@
 .menu-nav ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
-.menu-nav ul li{
+.menu-nav ul button{
     border-radius: 7px;
     padding: .7rem 1rem;
     margin-top: .5rem;
     cursor: pointer;
-}
-.menu-nav ul a{
+    text-align: left;
     font-weight: 500;
     font-size: 1.05rem;
+    width: 60%;
     transition: 200ms ease-out;
 }
-.menu-nav ul li:hover{
+.menu-nav ul button:hover{
     /* background-color: rgb(220, 255, 250);  */
     color:#1633ff;
 }
@@ -43,7 +43,6 @@
 }
 .media-container > *{
     font-size: 2rem;
-    color: rgb(4, 48, 56);
     cursor: pointer;
 }
 .menu-media{

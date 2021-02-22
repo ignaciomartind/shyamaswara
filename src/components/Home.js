@@ -8,11 +8,11 @@ import './styles/home.css'
 
 function Home(props){
     
-    const [language, setLanguage] = useState('Kannada')
+    // const [language, setLanguage] = useState('Kannada')
 
-    function handleLanguage(e){
-        setLanguage(e.target.value)
-    }
+    // function handleLanguage(e){
+    //     setLanguage(e.target.value)
+    // }
 
     return <div className="home">
         
