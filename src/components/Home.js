@@ -18,15 +18,16 @@ function Home(props){
         
         <header className="home-header">
             <h2>Home</h2>
-            <div className="home-lang-select">
+            {/* <div className="home-lang-select">
                 <select defaultValue="Kannada" onChange={handleLanguage}>
                     <option value="Kannada">Kannada</option>
                     <option value="English">English</option>
                 </select>
-            </div>
+            </div> */}
         </header>
         <div className="home-content">
-            {language === 'Kannada' ? <HomeKannada /> : <HomeEnglish/>}
+            <HomeKannada />
+            <HomeEnglish/>
         </div>
     </div>
 }

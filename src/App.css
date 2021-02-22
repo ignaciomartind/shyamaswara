@@ -41,8 +41,8 @@ a,h1,h2,h3,h4,p, label, button{
 }
 
 h2{
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2em;
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 }

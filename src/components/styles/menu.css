@@ -27,11 +27,12 @@
 }
 .menu-nav ul a{
     font-weight: 500;
+    font-size: 1.05rem;
     transition: 200ms ease-out;
 }
 .menu-nav ul li:hover{
-    background-color: rgb(220, 255, 250); 
-    color:rgb(29, 162, 185);
+    /* background-color: rgb(220, 255, 250);  */
+    color:#1633ff;
 }
 .media-container{
     display: flex;

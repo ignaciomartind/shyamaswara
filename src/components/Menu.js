@@ -16,13 +16,13 @@ import './styles/menu.css'
 function Menu(props){
 
     const selectedLinkStyle = {
-        backgroundColor: '#043038',
-        color: 'white',
-        boxShadow: '0px 0px 3px rgb(204, 202, 202)'
+        // backgroundColor: '#043038',
+        color: '#1633ff',
+        // boxShadow: '0px 0px 3px rgb(204, 202, 202)'
     }
 
     return <div className="menu">
-        <img src={logo} style={{filter: "grayscale(.5)", transform: "scale(.8)"}}/>
+        <img src={logo} style={{ transform: "scale(.8)"}}/>
         <nav className="menu-nav">
             <ul>
                 {props.menuLinks.map(item =>{

@@ -18,6 +18,9 @@ import imgArt5 from './media/arts5.png'
 import imgArt6 from './media/arts6.png'
 import imgArt7 from './media/arts7.png'
 
+import video1 from './media/video.mp4'
+import audio1 from './media/audio1.mp3'
+
 import './App.css';
 
 function App() {
@@ -61,6 +64,31 @@ function App() {
     },
 
   ]
+  const videos = [
+    {
+      id:0,
+      title: 'Title',
+      description:'Video Description',
+      src: video1,
+    },
+  ]
+  const audios = [
+    {
+      id:0,
+      title: 'Title',
+      src: audio1
+    },
+    {
+      id:1,
+      title: 'Title',
+      src: audio1
+    },
+    {
+      id:2,
+      title: 'Title',
+      src: audio1
+    },
+  ]
   
   const [selectedLink, setSelectedLink ] = useState('Home')
   const [section, setSection] = useState(<Home />)
@@ -88,7 +116,7 @@ function App() {
         return setSection(<Prints />)
 
       case 'Sounds': 
-        return setSection(<Sounds />)
+        return setSection(<Sounds videos={videos} audios={audios}/>)
       
       case 'Store':
         return setSection(<Store />)

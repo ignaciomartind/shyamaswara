@@ -1,8 +1,5 @@
 import React from 'react'
 
-import video1 from '../media/video.mp4'
-import audio1 from '../media/audio1.mp3'
-
 import './styles/sounds.css'
 
 function Sounds(props){
@@ -11,45 +8,27 @@ function Sounds(props){
         <h2>Sounds & videos</h2>
         <div className="SV-content">
             <div className="SV-videos">
-                <div className="SV-video-container">
-                    <video autoPlay controls loop>
-                        <source src={video1} type="video/mp4" />
-                    </video>
-                    <div className="SV-video-info">
-                        <p>Video Title</p>
-                        <p>Video Description</p>
+                {props.videos.map(video => {
+                    return <div className="SV-video-container" key={video.id}>
+                        <video autoPlay controls loop>
+                            <source src={video.src} type="video/mp4" />
+                        </video>
+                        <div className="SV-video-info">
+                            <p>{video.title}</p>
+                            <p>{video.description}</p>
+                        </div>
                     </div>
-                </div>
+                })}
             </div>
             <div className="SV-sounds">
-                <div className="SV-audio-container">
-                        <p>Audio title</p>
-                    <audio controls>
-                        <p>Audio title</p>
-                        <source src={audio1} type='audio/mp3'/>
-                    </audio>
-                </div>
-                <div className="SV-audio-container">
-                        <p>Audio title</p>
-                    <audio controls>
-                        <p>Audio title</p>
-                        <source src={audio1} type='audio/mp3'/>
-                    </audio>
-                </div>
-                <div className="SV-audio-container">
-                        <p>Audio title</p>
-                    <audio controls>
-                        <p>Audio title</p>
-                        <source src={audio1} type='audio/mp3'/>
-                    </audio>
-                </div>
-                <div className="SV-audio-container">
-                        <p>Audio title</p>
-                    <audio controls>
-                        <p>Audio title</p>
-                        <source src={audio1} type='audio/mp3'/>
-                    </audio>
-                </div>
+                {props.audios.map(audio =>{
+                    return <div className="SV-audio-container" key={audio.id}>
+                        <p>{audio.title}</p>
+                        <audio controls>
+                            <source src={audio.src} type='audio/mp3'/>
+                        </audio>
+                    </div>
+                })}
             </div>
         </div>
     </div>
