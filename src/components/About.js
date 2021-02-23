@@ -1,9 +1,9 @@
 import React from 'react'
 
-import imgAbout from '../media/about1.jpg'
-import imgAbout2 from '../media/about2.png'
-import imgAbout3 from '../media/flutemusic.jpg'
-import imgAbout4 from '../media/guitar.jpg'
+// import imgAbout from '../media/about1.jpg'
+// import imgAbout2 from '../media/about2.png'
+// import imgAbout3 from '../media/flutemusic.jpg'
+// import imgAbout4 from '../media/guitar.jpg'
 import './styles/about.css'
 
 function About(props){

@@ -9,6 +9,7 @@ import Prints from './components/Prints'
 import Sounds from './components/Sounds'
 import Store from './components/Store'
 import Contact from './components/Contact'
+import Loading from './components/Loading'
 
 import imgArt1 from './media/arts1.png'
 import imgArt2 from './media/arts2.png'
@@ -92,6 +93,7 @@ function App() {
   
   const [selectedLink, setSelectedLink ] = useState('Home')
   const [section, setSection] = useState(<Home />)
+  const [loading, setLoading] = useState(true)
 
   function handleClick(e){
     e.preventDefault()
@@ -128,17 +130,15 @@ function App() {
   
   }
 
-  function handleSection(){
-
-
-  
-  }
+  setTimeout(() => {
+    setLoading(false)
+  }, 1500);
 
   return (
-    <div className="App">
-      <Menu menuLinks={menuLinks} selectedLink={selectedLink} handleClick={handleClick}/>
-      {section}
-    </div>
+      loading ? <Loading /> : <div className="App">
+        <Menu menuLinks={menuLinks} selectedLink={selectedLink} handleClick={handleClick}/>
+        {section}
+      </div>
   );
 }
 

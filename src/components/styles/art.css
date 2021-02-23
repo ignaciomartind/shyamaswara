@@ -44,3 +44,13 @@
     bottom: 0;
     opacity: 1;
 }
+
+@media (max-width: 1024px){
+    .art-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .art-item-info{
+        opacity: 1;
+        bottom: 0;
+    }
+}

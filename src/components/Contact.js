@@ -13,7 +13,7 @@ function Contact(props){
     return <div className="contact">
         <h2>Contact</h2>
         <div className="contact-content">
-            <div className="contact-mth1">\
+            {/* <div className="contact-mth1">\
                 <p>Message or call us:</p>
                 <ul>
                     <li><a><FontAwesomeIcon icon={faWhatsapp}/><span>92112 32113</span></a></li>
@@ -22,22 +22,24 @@ function Contact(props){
                     <li><a href={'https://soundcloud.com/shyamaswara'} target='_blank'><FontAwesomeIcon icon={faSoundcloud}/><span>/ shyamaswara</span></a></li>
                     <li><a href={'https://www.instagram.com/shyamaswara/'} target='_blank'><FontAwesomeIcon icon={faInstagram}/><span>@shyamaswara</span></a></li>
                 </ul>
-            </div>
+            </div> */}
             <div className="contact-mth2">
 
                 <form className="contact-form">
-                    <label htmlFor="name">
-                        Name
-                        <input type="text" id="name" name="name" placeholder="FirstName LastName" required>
-                            
-                        </input>
-                    </label>
-                    <label htmlFor="phone">
-                        Phone
-                        <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                    <div className="contact-form-flex" style={{display:'flex', width: '100%'}}>
+                        <label htmlFor="name">
+                            Name
+                            <input type="text" id="name" name="name" placeholder="FirstName LastName" required>
+                                
+                            </input>
+                        </label>
+                        <label htmlFor="phone">
+                            Phone
+                            <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
 
-                        </input>
-                    </label>
+                            </input>
+                        </label>
+                    </div>
                     <label htmlFor="email">
                         Email
                         <input type="email" id="email" name="email" placeholder="Email address" required>
@@ -58,7 +60,7 @@ function Contact(props){
                     </label>
                     <label htmlFor="summary">
                         Summary
-                        <textarea id="summary" name="summary" required>
+                        <textarea id="summary" name="summary" required style={{textTransform: 'none'}}>
 
                         </textarea>
                     </label>
