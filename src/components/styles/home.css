@@ -32,7 +32,7 @@ option{
     align-items: flex-start;
 }
 .home-text{
-    margin-top: 5rem;
+    margin-top: 1rem;
     padding: 2rem;
     background-color: rgb(235, 234, 234);
     border-radius: 7px;

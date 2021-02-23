@@ -90,6 +90,29 @@ function App() {
       src: audio1
     },
   ]
+  const storeProducts = [
+    {
+      id: 0,
+      title: 'Product One',
+      description: 'Optional product description',
+      price: '$10',
+      src: imgArt2
+    },
+    {
+      id: 1,
+      title: 'Product Two',
+      description: 'Optional product description',
+      price: '$20',
+      src: imgArt4
+    },
+    {
+      id: 2,
+      title: 'Product Three',
+      description: 'Optional product description',
+      price: '$30',
+      src: imgArt6
+    },
+  ]
   
   const [selectedLink, setSelectedLink ] = useState('Home')
   const [section, setSection] = useState(<Home />)
@@ -122,7 +145,7 @@ function App() {
         return setSection(<Sounds videos={videos} audios={audios}/>)
       
       case 'Store':
-        return setSection(<Store />)
+        return setSection(<Store storeProducts={storeProducts}/>)
 
       case 'Contact': 
         return setSection(<Contact />)
