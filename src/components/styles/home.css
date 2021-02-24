@@ -75,10 +75,15 @@ option{
         width: 98%;
     }
 }
+@media (max-width:768px){
+    .home{
+        padding: 3rem 2.5rem;
+        width: 100%;
+    }
+}
 @media (max-width:425px){
     .home{
         padding: 3rem 0;
-        width: 100%;
     }
     .home-content{
         justify-content: center;

@@ -110,6 +110,12 @@
         margin-top: 0rem;
     }
 }
+@media (max-width: 768px){
+    .contact{
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+}
 @media (max-width: 425px){
     .contact{
         padding: 1rem .5rem;
