@@ -15,6 +15,11 @@ import './styles/menu.css'
 
 function Menu(props){
 
+    function clickEvents(e){
+        props.handleClick(e);
+        props.handleMenu();
+    }
+
     const selectedLinkStyle = {
         // backgroundColor: '#043038',
         color: '#1633ff',
@@ -27,9 +32,9 @@ function Menu(props){
             <ul>
                 {props.menuLinks.map(item =>{
                     if(item === props.selectedLink){
-                        return <button  key={item} data-key={item} onClick={props.handleClick} style={selectedLinkStyle}>{item}</button>
+                        return <button  key={item} data-key={item} onClick={clickEvents} style={selectedLinkStyle}>{item}</button>
                     }else{
-                        return <button  key={item} data-key={item} onClick={props.handleClick}>{item}</button>
+                        return <button  key={item} data-key={item} onClick={clickEvents}>{item}</button>
                     }
                 })}
             </ul>

@@ -40,6 +40,7 @@ function Contact(props){
                             </input>
                         </label>
                     </div>
+                    
                     <label htmlFor="email">
                         Email
                         <input type="email" id="email" name="email" placeholder="Email address" required>

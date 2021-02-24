@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 import {faBars} from '@fortawesome/free-solid-svg-icons'
-import {faCross} from '@fortawesome/free-solid-svg-icons'
+import {faTimes} from '@fortawesome/free-solid-svg-icons'
 
 import Menu from './components/Menu'
 import Home from './components/Home'
@@ -172,8 +172,8 @@ function App() {
 
   return (
       loading ? <Loading /> : <div className="App">
-        <button className={`btn-menu btn-${menuStatus}`} onClick={handleMenu}><FontAwesomeIcon icon={faBars} /></button>
-        <Menu menuLinks={menuLinks} selectedLink={selectedLink} handleClick={handleClick} menuStatus={menuStatus}/>
+        <button className={`btn-menu btn-${menuStatus}`} onClick={handleMenu}>{menuStatus ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}</button>
+        <Menu menuLinks={menuLinks} selectedLink={selectedLink} handleClick={handleClick} menuStatus={menuStatus} handleMenu={handleMenu}/>
         {section}
       </div>
   );

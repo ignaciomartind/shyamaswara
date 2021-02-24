@@ -110,3 +110,18 @@
         margin-top: 0rem;
     }
 }
+@media (max-width: 425px){
+    .contact{
+        padding: 1rem .5rem;
+        width: 100%;
+    }
+    .contact-content{
+        padding: 1rem .5rem;
+    }
+    .contact-mth2{
+        padding: .5rem;
+    }
+    .contact-form-flex{
+        flex-direction: column;
+    }
+}
