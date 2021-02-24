@@ -1,4 +1,8 @@
 import React, { useState } from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+
+import {faBars} from '@fortawesome/free-solid-svg-icons'
+import {faCross} from '@fortawesome/free-solid-svg-icons'
 
 import Menu from './components/Menu'
 import Home from './components/Home'
@@ -118,6 +122,8 @@ function App() {
   const [section, setSection] = useState(<Home />)
   const [loading, setLoading] = useState(true)
 
+  const [menuStatus, setMenuStatus] = useState('hide')
+
   function handleClick(e){
     e.preventDefault()
 
@@ -152,6 +158,13 @@ function App() {
       }
   
   }
+  function handleMenu(){
+    if(menuStatus === 'hide'){
+      setMenuStatus('show')
+    }else{
+      setMenuStatus('hide')
+    }
+  }
 
   setTimeout(() => {
     setLoading(false)
@@ -159,7 +172,8 @@ function App() {
 
   return (
       loading ? <Loading /> : <div className="App">
-        <Menu menuLinks={menuLinks} selectedLink={selectedLink} handleClick={handleClick}/>
+        <button className={`btn-menu btn-${menuStatus}`} onClick={handleMenu}><FontAwesomeIcon icon={faBars} /></button>
+        <Menu menuLinks={menuLinks} selectedLink={selectedLink} handleClick={handleClick} menuStatus={menuStatus}/>
         {section}
       </div>
   );

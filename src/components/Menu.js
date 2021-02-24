@@ -21,7 +21,7 @@ function Menu(props){
         // boxShadow: '0px 0px 3px rgb(204, 202, 202)'
     }
 
-    return <div className="menu">
+    return <div className={`menu menu-${props.menuStatus}`}>
         <img src={logo} style={{ transform: "scale(.8)"}} alt="Shyamaswara logo"/>
         <nav className="menu-nav">
             <ul>
