@@ -54,3 +54,18 @@
         bottom: 0;
     }
 }
+@media (max-width: 768px){
+    .art{
+        padding: 2rem 2rem;
+        width: 100%;
+    }
+}
+@media (max-width: 425px){
+    .art{
+        padding: 2rem .5rem;
+    }
+    .art-content{
+        padding: 2rem 1rem;
+        grid-template-columns: 1fr;
+    }
+}
