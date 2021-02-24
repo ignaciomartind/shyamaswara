@@ -172,7 +172,7 @@ function App() {
 
   return (
       loading ? <Loading /> : <div className="App">
-        <button className={`btn-menu btn-${menuStatus}`} onClick={handleMenu}>{menuStatus ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}</button>
+        <button className={`btn-menu btn-${menuStatus}`} onClick={handleMenu}>    {menuStatus === 'show' ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}   </button>
         <Menu menuLinks={menuLinks} selectedLink={selectedLink} handleClick={handleClick} menuStatus={menuStatus} handleMenu={handleMenu}/>
         {section}
       </div>

@@ -67,3 +67,22 @@
         grid-gap: 2rem
     }
 }
+@media (max-width: 425px){
+  .SV{
+    padding: 4rem 1rem;
+    width: 100%
+  }
+  .SV-videos{
+    padding: 1.5rem 1rem;
+  }
+  .SV-video-container video{
+    margin-top: .5rem;
+    width: 100%;
+  }
+  .SV-video-info{
+    position: static;
+  }
+  .SV-video-info-title{
+    font-size: 1.3rem;
+  }
+}
