@@ -43,7 +43,7 @@ function Menu(props){
                 <a href={'https://soundcloud.com/shyamaswara'} target="_blank"><FontAwesomeIcon icon={faSoundcloud} color="#ff7838"/></a>
                 <a href={''} target="_blank"><FontAwesomeIcon icon={faYoutube} color="#ff0000"/></a>
                 </div>
-                <img src={logoEng} />
+                <img src={logoEng} alt="english logo"/>
         </div>
        
     </div>

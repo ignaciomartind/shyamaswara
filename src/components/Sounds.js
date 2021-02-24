@@ -10,7 +10,7 @@ function Sounds(props){
             <div className="SV-videos">
                 {props.videos.map(video => {
                     return <div className="SV-video-container" key={video.id}>
-                        <video autoPlay controls loop>
+                        <video controls loop>
                             <source src={video.src} type="video/mp4" />
                         </video>
                         <div className="SV-video-info">

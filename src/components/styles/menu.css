@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     overflow: hidden;
 }
 .menu-nav{
@@ -70,6 +71,12 @@
         right: 100vw;
         z-index: 1;
     }
+    .menu-nav{
+        margin: 0;
+    }
+    .menu > img{
+        width: 60%
+    }
     .btn-menu{
         display: inline-block; 
         position: absolute;
@@ -114,6 +121,16 @@
     }
     .menu-hide{
         animation: menuHide 500ms ease-out forwards;
+    }
+    .menu-nav{
+        margin-top: 0;
+    }
+    .menu-nav ul button{
+        text-align: center;
+        width: 100%;
+    }
+    .menu > img{
+        width: 50%;
     }
     @keyframes menuShow{
         0%{
