@@ -58,3 +58,20 @@
         gap: 2rem;
     }
 }
+@media (max-width: 768px){  
+    .store{
+        width: 100%;
+    }
+}
+@media (max-width: 425px){
+    .store{
+        padding: 2rem 1rem;
+    }
+    .store-content{
+        padding: 2rem 2rem;
+        grid-template-columns: 1fr;
+    }
+    .store-product{
+        width: 100%;
+    }
+}
