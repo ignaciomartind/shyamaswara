@@ -94,6 +94,26 @@ function App() {
       src: audio1
     },
   ]
+  const prints = [
+    {
+      id: 0,
+      title: 'Title',
+      description: 'Description',
+      src: imgArt1
+    },
+    {
+      id: 1,
+      title: 'Title',
+      description: 'Description',
+      src: imgArt2
+    },
+    {
+      id: 2,
+      title: 'Title',
+      description: 'Description',
+      src: imgArt3
+    },
+  ]
   const storeProducts = [
     {
       id: 0,
@@ -145,7 +165,7 @@ function App() {
         return setSection(<Art art={art}/>)
 
       case 'Prints': 
-        return setSection(<Prints />)
+        return setSection(<Prints prints={prints}/>)
 
       case 'Sounds': 
         return setSection(<Sounds videos={videos} audios={audios}/>)
