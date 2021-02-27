@@ -44,6 +44,10 @@
     bottom: 0;
     opacity: 1;
 }
+.art-item-info-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 @media (max-width: 1024px){
     .art-content{
@@ -52,6 +56,9 @@
     .art-item-info{
         opacity: 1;
         bottom: 0;
+    }
+    .art-item-info-title{
+        font-size: 1.2rem;
     }
 }
 @media (max-width: 768px){

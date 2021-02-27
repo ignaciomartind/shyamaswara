@@ -4,33 +4,53 @@
 }
 .about-content{
     margin-top: 4rem;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
 }
-.about-content *{
-    color: white;
-}
-.about-text{
-    background-color: rgba(0,0,0,0.5);
+.about-badge{
+    background-color: white;
+    margin-left: 7rem;
+    min-width: 35%;
     padding: 2rem;
-    border-radius: 7px;
-}
-.about-text ul{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(173, 173, 173);
+}       
+.about-badge-info{
     margin-top: 2rem;
-    margin-left: 4rem;
 }
-.about-text ul li{
-    margin-top: .5rem;
-    list-style:square;
-    font-size: 1rem;
+.about-badge-info > p{
+    font-weight: 500;
 }
-
-@media (max-width: 1024px){
-    .about-content{
-        padding: 1rem;
-    }
-    .about-text{
-        margin-top:.5rem
-    }
+.about-badge-info > ul{
+    margin-top: .4rem;
+}
+.about-images{
+    position: relative;
+    width: 48%;
+    /* overflow: hidden; */
+}
+.about-images img{
+    position: absolute;
+}
+.about-img1{
+    width: 250px;
+    height: 250px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: calc(35%);
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px gray;
+}
+.about-img2{
+    width: 200px;
+    height: 200px;
+    right: 120px;
+    top: 120px;
+    bottom: 0;
+    left: 30%;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: -5px -5px 10px rgba(97, 96, 96, 0.699);
 }
