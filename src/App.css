@@ -43,8 +43,9 @@ a,h1,h2,h3,h4,p, label, button, li{
 h2{
   font-size: 2em;
   font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
+  /* text-align: center; */
+  /* text-transform: uppercase; */
+  color: #1633ff;
 }
 select:focus, input:focus, button:focus{
   outline: none;

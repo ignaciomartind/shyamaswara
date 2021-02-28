@@ -13,7 +13,7 @@ function About(props){
 
         <div className="about-content">
             <div className="about-badge">
-                <div className="about-badge-info" >
+                <div className="about-badge-info" style={{marginTop: '0'}}>
                     <p>Anamika N.A</p>
                     <ul>
                         <li>Former Journalist</li>
@@ -21,6 +21,9 @@ function About(props){
                         <li>Published Story-writer and Poet</li>
                         <li>Content Creator & Language Expert</li>
                     </ul>
+                </div>
+                <div className="about-image-inline">
+                    <img src={imgAbout1} alt="about"></img>
                 </div>
                 <div className="about-badge-info" >
                     <p>Master of Arts - Kannada</p>
@@ -30,6 +33,9 @@ function About(props){
                         <li>Two State awards for the top female writer</li>
                         <li>Multitude of published Short-Stories and Poems</li>
                     </ul>
+                </div>
+                <div className="about-image-inline">
+                    <img src={imgAbout2} alt="about"></img>
                 </div>
                 <div className="about-badge-info" >
                     <p>Creativity is our business.</p>

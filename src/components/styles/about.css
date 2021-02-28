@@ -25,6 +25,7 @@
     margin-top: .4rem;
 }
 .about-images{
+    margin-top: 10rem;
     position: relative;
     width: 48%;
     /* overflow: hidden; */
@@ -53,4 +54,47 @@
     z-index: 1;
     border-radius: 50%;
     box-shadow: -5px -5px 10px rgba(97, 96, 96, 0.699);
+}
+.about-image-inline{
+    display: none;
+}
+@media (max-width: 1024px){
+    .about-badge{
+        margin-left: 0;
+    }
+    .about-images img{
+        left: -2rem;
+    }
+}
+@media (max-width: 768px){
+    .about{
+        width: 100%;
+    }
+}
+@media (max-width: 425px){
+    .about{
+        padding: 1.5rem 0;
+    }
+    .about-content{
+        margin-top: 1.5rem;
+    }
+    .about-badge{
+        padding: 2rem 0;
+    }
+    .about-badge-info{
+        padding: 0 1rem;
+    }
+    .about-images{
+        margin-top: 0;
+        display: none;
+    }
+    .about-image-inline{
+        margin-top: 2rem;
+        display: block; 
+        width: 100%;
+    }
+    .about-image-inline img{
+        width: 100%;
+        box-shadow: 0px 0px 6px gray;
+    }
 }
