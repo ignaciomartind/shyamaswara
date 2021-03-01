@@ -5,18 +5,79 @@
 .writing-content{
     padding: 3rem;
 }
-.project{
+.writing-section{
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(194, 194, 194);
     padding: 2rem;
 }
-.project img{
-    border-radius: 10px;
-    box-shadow: 0px 0px 7px gray;
+.writing-section img{
+    max-width: 45%;
+    box-shadow: 0px 0px 3px gray;
 }
-.project-text{
-    padding: 0 2rem;
+.writing-section-text{
+    margin-left: 4rem
 }
-.project-text p{
-    margin-top: 1rem;
+.writing-section-text p{
     text-align: justify;
+    font-size: 1.1rem;
+}
+.writing-section-text h3{
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+@media (max-width: 1440px){
+    .writing-section-text h3{
+        margin-bottom: .5rem;
+    }
+    .writing-section{
+        align-items: center;
+    }
+}
+@media (max-width: 1024px){
+    .writing{
+        padding:2rem;
+    }
+    .writing-content{
+        padding: 1rem;
+    }
+    .writing-section{
+        padding: 2 .5rem;
+    }
+    .writing-section-text{
+        margin-left: 2rem;
+    }
+}
+@media (max-width: 768px){
+    .writing{
+        width: 100%;
+    }
+    .writing-content{
+        padding: 2rem 0;
+    }
+    .writing-section{
+        flex-direction: column-reverse;
+        
+    }
+    .writing-section img{
+        max-width: 100%;
+    }
+    .writing-section-text{
+        margin-left: 0;
+        padding: 0rem 0 1.5rem 0;
+    }
+    .writing-section-text p{
+        text-align: left;
+        margin-top: 0;
+    }
+}
+@media (max-width: 425px){
+    .writing{
+        padding: 2rem .5rem
+    }
+    .writing-section{
+        padding: 2rem .5rem;
+    }
 }

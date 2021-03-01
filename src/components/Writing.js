@@ -1,6 +1,6 @@
 import React from 'react'
 
-import imgWriting from '../media/WritingImage1.jpeg'
+import imgWriting from '../media/songwriting.jpg'
 import './styles/writing.css'
 
 function Writing(props){
@@ -8,39 +8,16 @@ function Writing(props){
     return <div className="writing">
         <h2>Writing</h2>
         <div className="writing-content">
-            <div className="project">
-                <img src={imgWriting} />
-                <div className="project-text">
-                    <h3>Project One</h3>
-                    <p>ವೃತ್ತಿಯಲ್ಲಿ ಅವಳೊಬ್ಬಳು ಯುವ ವೈದ್ಯೆ. ಅಜಮಾಸು ಇಪ್ಪತ್ತಾರರ ಪ್ರಾಯವಿರಬಹುದು. ಎತ್ತರದ ನಿಲುವು, ಭುಜಮಟ್ಟಕ್ಕೆ ಕತ್ತರಿಸಿದ ಕೂದಲು, ಸರಳ ಉಡುಪು, ಒ೦ದೆಳೆಯ ಕಾಡಿಗೆಯ ಮಿ೦ಚು ಕ೦ಗಳ ಹೊತ್ತ ಸು೦ದರಿ. ಜೀವನದ ಬಗೆಗೆ ತನ್ನದೇ ಆದ ಅಭಿಪ್ರಾಯವನ್ನು ಹೊ೦ದಿರುವ ಪ್ರಬುದ್ಧೆ. ಭೋರ್ಗರೆವ ಸಮುದ್ರದ ದಡದಲ್ಲಿ ಕೆ೦ಪಾದ ಚೆ೦ಡಿನ೦ತಿದ್ದ ದಿನ ಮುಳುಗಿ, ನಕ್ಷತ್ರಗಳು ಕಣ್ಣು ಮಿಟುಕಿಸಿ ಕತ್ತಲಾಗುವುದನ್ನೂ ಇನ್ನಿಲ್ಲದ ಕುತೂಹದಿ೦ದ ನೋಡುವ ಅವಳಲ್ಲಿ ಇನ್ನೂ</p>
-                </div>
-            </div>
-            <div className="project">
-                <img src={imgWriting} />
-                <div className="project-text">
-                    <h3>Project Two</h3>
-                    <p>ವೃತ್ತಿಯಲ್ಲಿ ಅವಳೊಬ್ಬಳು ಯುವ ವೈದ್ಯೆ. ಅಜಮಾಸು ಇಪ್ಪತ್ತಾರರ ಪ್ರಾಯವಿರಬಹುದು. ಎತ್ತರದ ನಿಲುವು, ಭುಜಮಟ್ಟಕ್ಕೆ ಕತ್ತರಿಸಿದ ಕೂದಲು, ಸರಳ ಉಡುಪು, ಒ೦ದೆಳೆಯ ಕಾಡಿಗೆಯ ಮಿ೦ಚು ಕ೦ಗಳ ಹೊತ್ತ ಸು೦ದರಿ. ಜೀವನದ ಬಗೆಗೆ ತನ್ನದೇ ಆದ ಅಭಿಪ್ರಾಯವನ್ನು ಹೊ೦ದಿರುವ ಪ್ರಬುದ್ಧೆ. ಭೋರ್ಗರೆವ ಸಮುದ್ರದ ದಡದಲ್ಲಿ ಕೆ೦ಪಾದ ಚೆ೦ಡಿನ೦ತಿದ್ದ ದಿನ ಮುಳುಗಿ, ನಕ್ಷತ್ರಗಳು ಕಣ್ಣು ಮಿಟುಕಿಸಿ ಕತ್ತಲಾಗುವುದನ್ನೂ ಇನ್ನಿಲ್ಲದ ಕುತೂಹದಿ೦ದ ನೋಡುವ ಅವಳಲ್ಲಿ ಇನ್ನೂ</p>
-                </div>
-            </div>
-            <div className="project">
-                <img src={imgWriting} />
-                <div className="project-text">
-                    <h3>Project Three</h3>
-                    <p>ವೃತ್ತಿಯಲ್ಲಿ ಅವಳೊಬ್ಬಳು ಯುವ ವೈದ್ಯೆ. ಅಜಮಾಸು ಇಪ್ಪತ್ತಾರರ ಪ್ರಾಯವಿರಬಹುದು. ಎತ್ತರದ ನಿಲುವು, ಭುಜಮಟ್ಟಕ್ಕೆ ಕತ್ತರಿಸಿದ ಕೂದಲು, ಸರಳ ಉಡುಪು, ಒ೦ದೆಳೆಯ ಕಾಡಿಗೆಯ ಮಿ೦ಚು ಕ೦ಗಳ ಹೊತ್ತ ಸು೦ದರಿ. ಜೀವನದ ಬಗೆಗೆ ತನ್ನದೇ ಆದ ಅಭಿಪ್ರಾಯವನ್ನು ಹೊ೦ದಿರುವ ಪ್ರಬುದ್ಧೆ. ಭೋರ್ಗರೆವ ಸಮುದ್ರದ ದಡದಲ್ಲಿ ಕೆ೦ಪಾದ ಚೆ೦ಡಿನ೦ತಿದ್ದ ದಿನ ಮುಳುಗಿ, ನಕ್ಷತ್ರಗಳು ಕಣ್ಣು ಮಿಟುಕಿಸಿ ಕತ್ತಲಾಗುವುದನ್ನೂ ಇನ್ನಿಲ್ಲದ ಕುತೂಹದಿ೦ದ ನೋಡುವ ಅವಳಲ್ಲಿ ಇನ್ನೂ</p>
-                </div>
-            </div>
-            <div className="project">
-                <img src={imgWriting} />
-                <div className="project-text">
-                    <h3>Project Four</h3>
-                    <p>ವೃತ್ತಿಯಲ್ಲಿ ಅವಳೊಬ್ಬಳು ಯುವ ವೈದ್ಯೆ. ಅಜಮಾಸು ಇಪ್ಪತ್ತಾರರ ಪ್ರಾಯವಿರಬಹುದು. ಎತ್ತರದ ನಿಲುವು, ಭುಜಮಟ್ಟಕ್ಕೆ ಕತ್ತರಿಸಿದ ಕೂದಲು, ಸರಳ ಉಡುಪು, ಒ೦ದೆಳೆಯ ಕಾಡಿಗೆಯ ಮಿ೦ಚು ಕ೦ಗಳ ಹೊತ್ತ ಸು೦ದರಿ. ಜೀವನದ ಬಗೆಗೆ ತನ್ನದೇ ಆದ ಅಭಿಪ್ರಾಯವನ್ನು ಹೊ೦ದಿರುವ ಪ್ರಬುದ್ಧೆ. ಭೋರ್ಗರೆವ ಸಮುದ್ರದ ದಡದಲ್ಲಿ ಕೆ೦ಪಾದ ಚೆ೦ಡಿನ೦ತಿದ್ದ ದಿನ ಮುಳುಗಿ, ನಕ್ಷತ್ರಗಳು ಕಣ್ಣು ಮಿಟುಕಿಸಿ ಕತ್ತಲಾಗುವುದನ್ನೂ ಇನ್ನಿಲ್ಲದ ಕುತೂಹದಿ೦ದ ನೋಡುವ ಅವಳಲ್ಲಿ ಇನ್ನೂ</p>
-                </div>
-            </div>
-            <div className="project">
-                <img src={imgWriting} />
-                <div className="project-text">
-                    <h3>Project Five</h3>
-                    <p>ವೃತ್ತಿಯಲ್ಲಿ ಅವಳೊಬ್ಬಳು ಯುವ ವೈದ್ಯೆ. ಅಜಮಾಸು ಇಪ್ಪತ್ತಾರರ ಪ್ರಾಯವಿರಬಹುದು. ಎತ್ತರದ ನಿಲುವು, ಭುಜಮಟ್ಟಕ್ಕೆ ಕತ್ತರಿಸಿದ ಕೂದಲು, ಸರಳ ಉಡುಪು, ಒ೦ದೆಳೆಯ ಕಾಡಿಗೆಯ ಮಿ೦ಚು ಕ೦ಗಳ ಹೊತ್ತ ಸು೦ದರಿ. ಜೀವನದ ಬಗೆಗೆ ತನ್ನದೇ ಆದ ಅಭಿಪ್ರಾಯವನ್ನು ಹೊ೦ದಿರುವ ಪ್ರಬುದ್ಧೆ. ಭೋರ್ಗರೆವ ಸಮುದ್ರದ ದಡದಲ್ಲಿ ಕೆ೦ಪಾದ ಚೆ೦ಡಿನ೦ತಿದ್ದ ದಿನ ಮುಳುಗಿ, ನಕ್ಷತ್ರಗಳು ಕಣ್ಣು ಮಿಟುಕಿಸಿ ಕತ್ತಲಾಗುವುದನ್ನೂ ಇನ್ನಿಲ್ಲದ ಕುತೂಹದಿ೦ದ ನೋಡುವ ಅವಳಲ್ಲಿ ಇನ್ನೂ</p>
+            <div className="writing-section">
+                <img src={imgWriting} alt='writing' />
+                <div className="writing-section-text">
+                    <h3>Template title</h3>
+                    <p>Production houses looking for great lyrics for Kannada and Hindi movies</p><br></br>
+                    <p>Artists Looking for Collaboration in Creative projects</p><br></br>
+                    <p>Advertising Agencies needing help with creating and localizing content</p><br></br>
+                    <p>Brands looking for a local Marketing & Content Strategy</p><br></br>
+                    <p>Technology Platforms needing Content creation, validation and curation</p><br></br>
+                    <p>Do get in touch and let us talk!</p>
                 </div>
             </div>
         </div>
