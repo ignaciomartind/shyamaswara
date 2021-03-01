@@ -2,7 +2,7 @@ import React from 'react'
 
 function HomeKannada(){
 
-    return<div className="home-text">
+    return<div className="home-text home-kannada">
         <p>ಶ್ಯಾಮಸ್ವರ.<br/>
         ಥಟ್ ಎಂದು ಹೃದಯಕ್ಕೆ ಹೊಳೆದ ಹೆಸರು.<br></br>
         ಹೊಸದಾಗಿ ಶುರುವಾದ ಸ್ವರಗಳ ಯಾತ್ರೆಯಲ್ಲಿ ಈ ಹೆಸರೇ ಒದಗಿಬಂತು.<br></br>
