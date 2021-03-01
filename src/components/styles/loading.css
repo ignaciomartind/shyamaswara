@@ -16,3 +16,13 @@
 .loading-img-container img:nth-child(2){
     margin-top: 2rem;
 }
+@media (max-width: 1024px){
+    .loading-img-container img{
+        width: 30%
+    }
+}
+@media (max-width: 425px){
+    .loading-img-container img{
+        width: 60%
+    }
+}
