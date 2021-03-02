@@ -1,27 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-import imgWriting from '../media/songwriting.jpg'
+import WritingArticle from './WritingArticle'
+import WritingFull from './WritingFull'
 import './styles/writing.css'
 
 function Writing(props){
 
-    return <div className="writing">
-        <h2>Writing</h2>
-        <div className="writing-content">
-            <div className="writing-section">
-                <img src={imgWriting} alt='writing' />
-                <div className="writing-section-text">
-                    <h3>Template title</h3>
-                    <p>Production houses looking for great lyrics for Kannada and Hindi movies</p><br></br>
-                    <p>Artists Looking for Collaboration in Creative projects</p><br></br>
-                    <p>Advertising Agencies needing help with creating and localizing content</p><br></br>
-                    <p>Brands looking for a local Marketing & Content Strategy</p><br></br>
-                    <p>Technology Platforms needing Content creation, validation and curation</p><br></br>
-                    <p>Do get in touch and let us talk!</p>
-                </div>
+    const [ fullWriting, setFullWriting ] = useState(null)
+
+    function handleWriting(e){
+
+        const writing = e.target.getAttribute('data-key')
+        setFullWriting(parseInt(writing))
+    }   
+    console.log(fullWriting)
+    if(fullWriting === null){
+
+        return <div className="writing">
+            <h2>Writing</h2>
+            <div className="writing-content">
+                {props.writings.map(writing =>{
+                    return <WritingArticle key={writing.id} item={writing} handleWriting={handleWriting} />
+                })}
             </div>
         </div>
-    </div>
+    }else{
+
+        const writingDisplayed = props.writings.filter(writing => writing.id === fullWriting)
+        console.log(writingDisplayed)
+        return <div className="writing">
+            <WritingFull writing={writingDisplayed[0]} handleWriting={handleWriting}/>
+        </div>
+
+    }
 }
 
 export default Writing

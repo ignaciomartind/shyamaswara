@@ -23,6 +23,8 @@ import imgArt4 from './media/arts4.png'
 import imgArt5 from './media/arts5.png'
 import imgArt6 from './media/arts6.png'
 import imgArt7 from './media/arts7.png'
+import imgWriting1 from './media/songwriting.jpg'
+import imgWriting2 from './media/flutemusic.jpg'
 
 import video1 from './media/video.mp4'
 import audio1 from './media/audio1.mp3'
@@ -138,6 +140,32 @@ function App() {
       src: imgArt6
     },
   ]
+  const writings = [
+    {
+      id: 0,
+      title: 'Template title',
+      image: imgWriting1,
+      content: 
+        'Production houses looking for great lyrics for Kannada and Hindi movies.<br/>\
+        Artists Looking for Collaboration in Creative projects.<br/>\
+        Advertising Agencies needing help with creating and localizing content.<br/>\
+        Brands looking for a local Marketing & Content Strategy.<br/>\
+        Technology Platforms needing Content creation, validation and curation.<br/>\
+        Do get in touch and let us talk!'
+    },
+    {
+      id: 1,
+      title: 'Template title',
+      image: imgWriting2,
+      content: 
+        'Production houses looking for great lyrics for Kannada and Hindi movies.<br/>\
+        Artists Looking for Collaboration in Creative projects.<br/>\
+        Advertising Agencies needing help with creating and localizing content.<br/>\
+        Brands looking for a local Marketing & Content Strategy.<br/>\
+        Technology Platforms needing Content creation, validation and curation.<br/>\
+        Do get in touch and let us talk!'
+    }
+  ]
   
   const [selectedLink, setSelectedLink ] = useState('Home')
   const [section, setSection] = useState(<Home />)
@@ -160,7 +188,7 @@ function App() {
         return setSection(<About />)
 
       case 'Writing': 
-        return setSection(<Writing />)
+        return setSection(<Writing writings={writings}/>)
 
       case 'Art': 
         return setSection(<Art art={art}/>)

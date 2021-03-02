@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react'
 
 import HomeKannada from './HomeKannada'
 import HomeEnglish from './HomeEnglish'
-import HomeKannadaFull from './HomeKannadaFull'
-import HomeEnglishFull from './HomeEnglishFull'
 
 import './styles/home.css'
 
@@ -15,16 +13,6 @@ function Home(props){
     // function handleLanguage(e){
     //     setLanguage(e.target.value)
     // }
-
-    const [fullText, setFullText] = useState(null)
-
-    function handleText(e){
-
-        const text = e.target.getAttribute('data-key')
-        setFullText(text)
-
-    }
-
 
 
     return <div className="home">
@@ -39,8 +27,8 @@ function Home(props){
             </div> */}
         </header>
         <div className="home-content">
-            <HomeKannada handleText={handleText} selected={fullText}/>
-            <HomeEnglish handleText={handleText} selected={fullText}/>
+            <HomeKannada />
+            <HomeEnglish />
         </div>
     </div>
 }
