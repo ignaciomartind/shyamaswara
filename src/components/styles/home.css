@@ -25,19 +25,22 @@ option{
     border: 1px solid rgb(209, 209, 209);;
 }
 .home-content{
-    padding: 1rem 0;
+    padding: 5rem 0;
     text-align: justify;
     line-height: 1.5;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .home-text{
+    min-height: 150px;
+    position: relative;
     margin-top: 1rem;
-    padding: 2rem;
+    padding: 1rem 2rem;
     background-color: rgb(235, 234, 234);
     border-radius: 7px;
-    width: 47%;
+    width: 90%;
     transition: 300ms ease-in-out;
     box-shadow: 0px 0px 3px rgb(194, 192, 192);
     animation: textAppear;
@@ -50,12 +53,28 @@ option{
     margin-right: .2rem;
 }
 .home-text:hover{
-    background-color: #043038;
+    background-color: #00799f;
     color: white;
     box-shadow: 0px 0px 10px rgb(153, 153, 153);
 }
 .home-kannada p{
     font-family: 'Baloo 2', cursive;
+}
+.home-text p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.home-full-text{
+    display: inline!important;
+    -webkit-line-clamp: 20;
+    overflow: scroll;
+}
+.btn-read-more{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
 }
 @keyframes textAppear{
     0%{
@@ -95,3 +114,7 @@ option{
         width: 100%;
     }
 }
+
+
+
+/************************************************/
