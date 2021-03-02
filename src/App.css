@@ -26,7 +26,10 @@ a,h1,h2,h3,h4,p, label, button, li{
   animation-timing-function: cubic-bezier(.85,.63,.58,1.17);
   height: 100%;
   overflow-x: hidden;
-} 
+}
+.home-content, .about-content, .writing-content, .art-contentm , .contant-content{
+  padding-bottom: 6rem;
+}
 @keyframes appearing{
   from{
     transform: translateY(100vh);

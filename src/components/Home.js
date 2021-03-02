@@ -41,7 +41,6 @@ function Home(props){
         <div className="home-content">
             <HomeKannada handleText={handleText} selected={fullText}/>
             <HomeEnglish handleText={handleText} selected={fullText}/>
-            {fullText}
         </div>
     </div>
 }

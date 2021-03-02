@@ -25,7 +25,7 @@ option{
     border: 1px solid rgb(209, 209, 209);;
 }
 .home-content{
-    padding: 5rem 0;
+    padding: 2rem 0;
     text-align: justify;
     line-height: 1.5;
     display: flex;
@@ -36,7 +36,6 @@ option{
 .home-text{
     min-height: 150px;
     position: relative;
-    margin-top: 1rem;
     padding: 1rem 2rem;
     background-color: rgb(235, 234, 234);
     border-radius: 7px;
@@ -57,6 +56,9 @@ option{
     color: white;
     box-shadow: 0px 0px 10px rgb(153, 153, 153);
 }
+.home-text{
+    margin-top: 4rem;
+}
 .home-kannada p{
     font-family: 'Baloo 2', cursive;
 }
@@ -73,7 +75,7 @@ option{
 }
 .btn-read-more{
     position: absolute;
-    bottom: 2rem;
+    bottom: -1rem;
     right: 2rem;
 }
 @keyframes textAppear{
