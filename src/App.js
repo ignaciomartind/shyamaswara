@@ -14,6 +14,7 @@ import Sounds from './components/Sounds'
 import Store from './components/Store'
 import Contact from './components/Contact'
 import Loading from './components/Loading'
+import Footer from './components/Footer'
 
 import imgArt1 from './media/arts1.png'
 import imgArt2 from './media/arts2.png'
@@ -195,6 +196,7 @@ function App() {
         <button className={`btn-menu btn-${menuStatus}`} onClick={handleMenu}>    {menuStatus === 'show' ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}   </button>
         <Menu menuLinks={menuLinks} selectedLink={selectedLink} handleClick={handleClick} menuStatus={menuStatus} handleMenu={handleMenu}/>
         {section}
+        <Footer />
       </div>
   );
 }
