@@ -55,9 +55,20 @@ function Contact(props){
                     </label>
                     <label htmlFor="subject">
                         Subject
-                        <input type="text" id="subject" name="subject" placeholder="Enter a subject" required>
-
-                        </input>
+                        <select id="subject" name="subject" required>
+                            <option value="Lyrics">
+                                Lyrics
+                            </option>
+                            <option value="Advertising">
+                                Advertising
+                            </option>
+                            <option value="Movies">
+                                Movies
+                            </option>
+                            <option value="General">
+                                General
+                            </option>
+                        </select>
                     </label>
                     <label htmlFor="summary">
                         Summary

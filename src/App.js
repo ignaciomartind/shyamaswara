@@ -23,8 +23,7 @@ import imgArt4 from './media/arts4.png'
 import imgArt5 from './media/arts5.png'
 import imgArt6 from './media/arts6.png'
 import imgArt7 from './media/arts7.png'
-import imgWriting1 from './media/songwriting.jpg'
-import imgWriting2 from './media/flutemusic.jpg'
+import imgWriting1 from './media/2.f8505c29.jpg'
 
 import video1 from './media/video.mp4'
 import audio1 from './media/audio1.mp3'
@@ -75,6 +74,12 @@ function App() {
   const videos = [
     {
       id:0,
+      title: 'Title',
+      description:'Video Description',
+      src: video1,
+    },
+    {
+      id:1,
       title: 'Title',
       description:'Video Description',
       src: video1,
@@ -156,7 +161,7 @@ function App() {
     {
       id: 1,
       title: 'Template title',
-      image: imgWriting2,
+      image: imgWriting1,
       content: 
         'Production houses looking for great lyrics for Kannada and Hindi movies.<br/>\
         Artists Looking for Collaboration in Creative projects.<br/>\

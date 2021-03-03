@@ -7,12 +7,12 @@ function WritingArticle(props){
             return {__html: props.item.content}
         }
 
-        return<div className="writing-section">
+        return<div className="writing-section" onClick={props.handleWriting} data-key={props.item.id}>
             <img src={props.item.image} alt='writing' />
             <div className="writing-section-text">
                 <h3>{props.item.title}</h3>
                 <p className="writing-pharagraph" dangerouslySetInnerHTML={createMarkup()} ></p>
-                <button className="contact-btn btn-read-more" data-key={props.item.id} onClick={props.handleWriting}>Read more</button>
+                {/* <button className="contact-btn btn-read-more" data-key={props.item.id} onClick={props.handleWriting}>Read more</button> */}
             </div>
         </div>
 }

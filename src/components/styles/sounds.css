@@ -1,5 +1,5 @@
 .SV{
-    padding: 3rem 5rem;
+    padding: 1rem 5rem;
     width: 85%;
 }
 .SV-content{
@@ -9,8 +9,9 @@
 }
 .SV-videos{
     padding: 5rem 3rem;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
 }
 .SV-video-container{
     position: relative;
@@ -22,13 +23,12 @@
 }
 .SV-video-info{
     position: absolute;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(224, 223, 223, 0.308);
     border-radius: 10px;
-    padding: 1rem 2rem;
-    left: 80%;
-    right: -25%;
-    color: white;
-    top: 10%;
+    padding: .5rem 1rem;
+    left: 1rem;
+    color: rgb(255, 255, 255);
+    top: 1rem;
 }
 .SV-sounds{
     display: grid;
@@ -65,6 +65,9 @@
     .SV-sounds{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 2rem
+    }
+    .SV-videos{
+      grid-template-columns: repeat(1,1fr);
     }
 }
 @media (max-width: 768px){

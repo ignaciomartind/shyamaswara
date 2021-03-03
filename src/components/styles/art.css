@@ -3,11 +3,11 @@
 }
 
 .art{
-    padding: 5rem 3rem;
+    padding: 1rem 5rem;
     width: 85%;
 }
 .art-content{
-    padding: 2rem;
+    padding: 2rem 7rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3,1fr);
