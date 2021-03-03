@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles/contact.css'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -9,6 +9,23 @@ import {faSoundcloud} from '@fortawesome/free-brands-svg-icons'
 import {faInstagram} from '@fortawesome/free-brands-svg-icons'
  
 function Contact(props){
+
+    const [dataForm, setDataForm] = useState({
+        name: '',
+        phone:'',
+        email:'',
+        budget:'',
+        subject:'',
+        summary:'',
+    })
+    
+    function handleChange(e){
+        setDataForm({
+            ...dataForm,
+            [e.target.name] : e.target.value
+        })
+        console.log(dataForm)
+    }
 
     return <div className="contact">
         <h2>Contact</h2>
@@ -25,37 +42,35 @@ function Contact(props){
             </div> */}
             <div className="contact-mth2">
 
-                <form className="contact-form">
+                <form className="contact-form" >
                     <div className="contact-form-flex" style={{display:'flex', width: '100%'}}>
                         <label htmlFor="name">
-                            Name
-                            <input type="text" id="name" name="name" placeholder="FirstName LastName" required>
-                                
-                            </input>
+                            Name | {dataForm.name}
+                            <input type="text" id="name" name="name" placeholder="FirstName LastName" required onChange={handleChange}></input>
                         </label>
                         <label htmlFor="phone">
-                            Phone
-                            <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                            Phone | {dataForm.phone}
+                            <input type="tel" id="phone" name="phone" placeholder="Phone number" required onChange={handleChange}>
 
                             </input>
                         </label>
                     </div>
                     
                     <label htmlFor="email">
-                        Email
-                        <input type="email" id="email" name="email" placeholder="Email address" required>
+                        Email | {dataForm.email}
+                        <input type="email" id="email" name="email" placeholder="Email address" required onChange={handleChange}>
 
                         </input>
                     </label>
                     <label htmlFor="budget">
-                        Budget
-                        <input type="number" id="budget" name="budget" placeholder="Budget" required>
+                        Budget | ${dataForm.budget}
+                        <input type="number" id="budget" name="budget" placeholder="Budget" required onChange={handleChange}>
 
                         </input>
                     </label>
                     <label htmlFor="subject">
-                        Subject
-                        <select id="subject" name="subject" required>
+                        Subject | {dataForm.subject}
+                        <select id="subject" name="subject" required onChange={handleChange}>
                             <option value="Lyrics">
                                 Lyrics
                             </option>
@@ -72,7 +87,7 @@ function Contact(props){
                     </label>
                     <label htmlFor="summary">
                         Summary
-                        <textarea id="summary" name="summary" required style={{textTransform: 'none'}}>
+                        <textarea id="summary" name="summary" required style={{textTransform: 'none'}} onChange={handleChange}>
 
                         </textarea>
                     </label>
